@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EFE864925E188DD0003098E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE864825E188DD0003098E /* AppDelegate.swift */; };
+		4EFE864B25E188DD0003098E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE864A25E188DD0003098E /* ViewController.swift */; };
+		4EFE864D25E188E00003098E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE864C25E188E00003098E /* Assets.xcassets */; };
+		4EFE865025E188E00003098E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE864E25E188E00003098E /* Main.storyboard */; };
+		4EFE865C25E188E00003098E /* Talos_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE865B25E188E00003098E /* Talos_DemoTests.swift */; };
+		4EFE866725E188E00003098E /* Talos_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE866625E188E00003098E /* Talos_DemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EFE865825E188E00003098E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EFE863D25E188DD0003098E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EFE864425E188DD0003098E;
+			remoteInfo = "Talos Demo";
+		};
+		4EFE866325E188E00003098E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EFE863D25E188DD0003098E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EFE864425E188DD0003098E;
+			remoteInfo = "Talos Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EFE864525E188DD0003098E /* Talos Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talos Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFE864825E188DD0003098E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EFE864A25E188DD0003098E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EFE864C25E188E00003098E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EFE864F25E188E00003098E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EFE865125E188E00003098E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFE865225E188E00003098E /* Talos_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Talos_Demo.entitlements; sourceTree = "<group>"; };
+		4EFE865725E188E00003098E /* Talos DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talos DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFE865B25E188E00003098E /* Talos_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talos_DemoTests.swift; sourceTree = "<group>"; };
+		4EFE865D25E188E00003098E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFE866225E188E00003098E /* Talos DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talos DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFE866625E188E00003098E /* Talos_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talos_DemoUITests.swift; sourceTree = "<group>"; };
+		4EFE866825E188E00003098E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EFE864225E188DD0003098E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE865425E188E00003098E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE865F25E188E00003098E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EFE863C25E188DD0003098E = {
+			isa = PBXGroup;
+			children = (
+				4EFE864725E188DD0003098E /* Talos Demo */,
+				4EFE865A25E188E00003098E /* Talos DemoTests */,
+				4EFE866525E188E00003098E /* Talos DemoUITests */,
+				4EFE864625E188DD0003098E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EFE864625E188DD0003098E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE864525E188DD0003098E /* Talos Demo.app */,
+				4EFE865725E188E00003098E /* Talos DemoTests.xctest */,
+				4EFE866225E188E00003098E /* Talos DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EFE864725E188DD0003098E /* Talos Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE864825E188DD0003098E /* AppDelegate.swift */,
+				4EFE864A25E188DD0003098E /* ViewController.swift */,
+				4EFE864C25E188E00003098E /* Assets.xcassets */,
+				4EFE864E25E188E00003098E /* Main.storyboard */,
+				4EFE865125E188E00003098E /* Info.plist */,
+				4EFE865225E188E00003098E /* Talos_Demo.entitlements */,
+			);
+			path = "Talos Demo";
+			sourceTree = "<group>";
+		};
+		4EFE865A25E188E00003098E /* Talos DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE865B25E188E00003098E /* Talos_DemoTests.swift */,
+				4EFE865D25E188E00003098E /* Info.plist */,
+			);
+			path = "Talos DemoTests";
+			sourceTree = "<group>";
+		};
+		4EFE866525E188E00003098E /* Talos DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE866625E188E00003098E /* Talos_DemoUITests.swift */,
+				4EFE866825E188E00003098E /* Info.plist */,
+			);
+			path = "Talos DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EFE864425E188DD0003098E /* Talos Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFE866B25E188E10003098E /* Build configuration list for PBXNativeTarget "Talos Demo" */;
+			buildPhases = (
+				4EFE864125E188DD0003098E /* Sources */,
+				4EFE864225E188DD0003098E /* Frameworks */,
+				4EFE864325E188DD0003098E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Talos Demo";
+			productName = "Talos Demo";
+			productReference = 4EFE864525E188DD0003098E /* Talos Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EFE865625E188E00003098E /* Talos DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFE866E25E188E10003098E /* Build configuration list for PBXNativeTarget "Talos DemoTests" */;
+			buildPhases = (
+				4EFE865325E188E00003098E /* Sources */,
+				4EFE865425E188E00003098E /* Frameworks */,
+				4EFE865525E188E00003098E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EFE865925E188E00003098E /* PBXTargetDependency */,
+			);
+			name = "Talos DemoTests";
+			productName = "Talos DemoTests";
+			productReference = 4EFE865725E188E00003098E /* Talos DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EFE866125E188E00003098E /* Talos DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFE867125E188E10003098E /* Build configuration list for PBXNativeTarget "Talos DemoUITests" */;
+			buildPhases = (
+				4EFE865E25E188E00003098E /* Sources */,
+				4EFE865F25E188E00003098E /* Frameworks */,
+				4EFE866025E188E00003098E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EFE866425E188E00003098E /* PBXTargetDependency */,
+			);
+			name = "Talos DemoUITests";
+			productName = "Talos DemoUITests";
+			productReference = 4EFE866225E188E00003098E /* Talos DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EFE863D25E188DD0003098E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4EFE864425E188DD0003098E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4EFE865625E188E00003098E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4EFE864425E188DD0003098E;
+					};
+					4EFE866125E188E00003098E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4EFE864425E188DD0003098E;
+					};
+				};
+			};
+			buildConfigurationList = 4EFE864025E188DD0003098E /* Build configuration list for PBXProject "Talos Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EFE863C25E188DD0003098E;
+			productRefGroup = 4EFE864625E188DD0003098E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EFE864425E188DD0003098E /* Talos Demo */,
+				4EFE865625E188E00003098E /* Talos DemoTests */,
+				4EFE866125E188E00003098E /* Talos DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EFE864325E188DD0003098E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE864D25E188E00003098E /* Assets.xcassets in Resources */,
+				4EFE865025E188E00003098E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE865525E188E00003098E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE866025E188E00003098E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EFE864125E188DD0003098E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE864B25E188DD0003098E /* ViewController.swift in Sources */,
+				4EFE864925E188DD0003098E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE865325E188E00003098E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE865C25E188E00003098E /* Talos_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE865E25E188E00003098E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE866725E188E00003098E /* Talos_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EFE865925E188E00003098E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EFE864425E188DD0003098E /* Talos Demo */;
+			targetProxy = 4EFE865825E188E00003098E /* PBXContainerItemProxy */;
+		};
+		4EFE866425E188E00003098E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EFE864425E188DD0003098E /* Talos Demo */;
+			targetProxy = 4EFE866325E188E00003098E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EFE864E25E188E00003098E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EFE864F25E188E00003098E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EFE866925E188E00003098E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EFE866A25E188E00003098E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4EFE866C25E188E10003098E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Talos Demo/Talos_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Talos Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4EFE866D25E188E10003098E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Talos Demo/Talos_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Talos Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4EFE866F25E188E10003098E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				INFOPLIST_FILE = "Talos DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talos Demo.app/Contents/MacOS/Talos Demo";
+			};
+			name = Debug;
+		};
+		4EFE867025E188E10003098E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				INFOPLIST_FILE = "Talos DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talos Demo.app/Contents/MacOS/Talos Demo";
+			};
+			name = Release;
+		};
+		4EFE867225E188E10003098E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				INFOPLIST_FILE = "Talos DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Talos Demo";
+			};
+			name = Debug;
+		};
+		4EFE867325E188E10003098E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BCU6H8L7MA;
+				INFOPLIST_FILE = "Talos DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Talos Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EFE864025E188DD0003098E /* Build configuration list for PBXProject "Talos Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE866925E188E00003098E /* Debug */,
+				4EFE866A25E188E00003098E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFE866B25E188E10003098E /* Build configuration list for PBXNativeTarget "Talos Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE866C25E188E10003098E /* Debug */,
+				4EFE866D25E188E10003098E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFE866E25E188E10003098E /* Build configuration list for PBXNativeTarget "Talos DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE866F25E188E10003098E /* Debug */,
+				4EFE867025E188E10003098E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFE867125E188E10003098E /* Build configuration list for PBXNativeTarget "Talos DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFE867225E188E10003098E /* Debug */,
+				4EFE867325E188E10003098E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EFE863D25E188DD0003098E /* Project object */;
+}
