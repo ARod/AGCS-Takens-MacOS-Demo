@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		4EFE865025E188E00003098E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFE864E25E188E00003098E /* Main.storyboard */; };
 		4EFE865C25E188E00003098E /* Talos_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE865B25E188E00003098E /* Talos_DemoTests.swift */; };
 		4EFE866725E188E00003098E /* Talos_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE866625E188E00003098E /* Talos_DemoUITests.swift */; };
+		4EFE869D25E970580003098E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE869C25E970570003098E /* WebKit.framework */; };
+		4EFE86AE25EAC08C0003098E /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFE86AD25EAC08C0003098E /* PythonKit */; };
+		4EFE86B325EAEBCF0003098E /* FileMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE86B225EAEBCF0003098E /* FileMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		4EFE866225E188E00003098E /* Talos DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talos DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFE866625E188E00003098E /* Talos_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talos_DemoUITests.swift; sourceTree = "<group>"; };
 		4EFE866825E188E00003098E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFE869C25E970570003098E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4EFE86B225EAEBCF0003098E /* FileMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFE869D25E970580003098E /* WebKit.framework in Frameworks */,
+				4EFE86AE25EAC08C0003098E /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,7 @@
 				4EFE865A25E188E00003098E /* Talos DemoTests */,
 				4EFE866525E188E00003098E /* Talos DemoUITests */,
 				4EFE864625E188DD0003098E /* Products */,
+				4EFE869B25E970570003098E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +106,7 @@
 			children = (
 				4EFE864825E188DD0003098E /* AppDelegate.swift */,
 				4EFE864A25E188DD0003098E /* ViewController.swift */,
+				4EFE86B225EAEBCF0003098E /* FileMonitor.swift */,
 				4EFE864C25E188E00003098E /* Assets.xcassets */,
 				4EFE864E25E188E00003098E /* Main.storyboard */,
 				4EFE865125E188E00003098E /* Info.plist */,
@@ -124,6 +133,14 @@
 			path = "Talos DemoUITests";
 			sourceTree = "<group>";
 		};
+		4EFE869B25E970570003098E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE869C25E970570003098E /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Talos Demo";
+			packageProductDependencies = (
+				4EFE86AD25EAC08C0003098E /* PythonKit */,
+			);
 			productName = "Talos Demo";
 			productReference = 4EFE864525E188DD0003098E /* Talos Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 4EFE863C25E188DD0003098E;
+			packageReferences = (
+				4EFE86AC25EAC08C0003098E /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 4EFE864625E188DD0003098E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +278,7 @@
 			files = (
 				4EFE864B25E188DD0003098E /* ViewController.swift in Sources */,
 				4EFE864925E188DD0003098E /* AppDelegate.swift in Sources */,
+				4EFE86B325EAEBCF0003098E /* FileMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +383,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -413,6 +438,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -431,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aj-technologies.TalosDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -452,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "AJ-Technologies-LLC.Talos-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aj-technologies.TalosDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -582,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EFE86AC25EAC08C0003098E /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EFE86AD25EAC08C0003098E /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EFE86AC25EAC08C0003098E /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EFE863D25E188DD0003098E /* Project object */;
 }

@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -21,7 +24,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" state="on" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -630,9 +633,9 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Window" id="aUF-d1-5bR">
+                            <menuItem title="AGCS - Talos" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                <menu key="submenu" title="AGCS - Talos" systemMenu="window" id="Td7-aD-5lo">
                                     <items>
                                         <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
                                             <connections>
@@ -673,7 +676,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Talos_Demo" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,11 +686,11 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="AGCS - TAKENS Demo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -698,20 +701,135 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="246"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Talos_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1078"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="66Y-jq-pXb">
+                                <rect key="frame" x="809" y="63" width="83" height="33"/>
+                                <buttonCell key="cell" type="push" title="EEG" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="24K-qd-vBn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openEDFPushButtonAction:" target="XfG-lQ-9wD" id="hK1-WL-EyC"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-Jm-4Ky">
+                                <rect key="frame" x="809" y="111" width="83" height="34"/>
+                                <buttonCell key="cell" type="push" title="Takens" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Xg-s5-coS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="findTalosButtonAction:" target="XfG-lQ-9wD" id="RfZ-K0-NFE"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P0U-me-xMV">
+                                <rect key="frame" x="211" y="70" width="578" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Mzk-vb-1eY">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Dq-Is-4sA">
+                                <rect key="frame" x="211" y="117" width="580" height="25"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="3da-70-4Qy">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-M9-OI2">
+                                <rect key="frame" x="20" y="1016" width="84" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="T5H-aC-VjQ"/>
+                                    <constraint firstAttribute="height" constant="48" id="dSw-2j-rm1"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LorenzAttractor" id="p3r-ge-Dj7"/>
+                                <color key="contentTintColor" red="0.76862745099999996" green="0.79215686269999996" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0F0-iQ-HH3">
+                                <rect key="frame" x="113" y="1016" width="680" height="50"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="AGCS Takens Seizure Detector" id="W6w-FF-fXf">
+                                    <font key="font" size="40" name="BradleyHandITCTT-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H06-EX-vhd">
+                                <rect key="frame" x="173" y="13" width="654" height="32"/>
+                                <buttonCell key="cell" type="push" title="Seizure Detection" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ydg-Yq-5wB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="executeTalosPushButton:" target="XfG-lQ-9wD" id="Wpi-7p-CHI"/>
+                                </connections>
+                            </button>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zK0-E6-mOA">
+                                <rect key="frame" x="28" y="189" width="944" height="808"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gvC-Jm-4Ky" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" multiplier="1.7" id="1Mp-SK-qrN"/>
+                            <constraint firstItem="H06-EX-vhd" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="1UA-lu-Veq"/>
+                            <constraint firstItem="66Y-jq-pXb" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" multiplier="1.85" id="4mb-QH-uIH"/>
+                            <constraint firstItem="66Y-jq-pXb" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.071" id="6aU-ZJ-3q8"/>
+                            <constraint firstItem="zK0-E6-mOA" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.75" id="8dG-yl-bNE"/>
+                            <constraint firstItem="H06-EX-vhd" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="508" id="E7b-Ij-IG9"/>
+                            <constraint firstItem="0Dq-Is-4sA" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" multiplier="0.98" constant="10.5" id="EaQ-B6-ruo"/>
+                            <constraint firstItem="66Y-jq-pXb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" multiplier="1.7" id="I9t-7C-iam"/>
+                            <constraint firstItem="5A3-M9-OI2" firstAttribute="centerY" secondItem="0F0-iQ-HH3" secondAttribute="centerY" constant="1" id="JeI-o1-Rp6"/>
+                            <constraint firstItem="H06-EX-vhd" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.044586" constant="-27.019108280254777" id="Ldu-r2-seW"/>
+                            <constraint firstItem="P0U-me-xMV" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.0194986" id="NXK-ap-ZDE"/>
+                            <constraint firstItem="P0U-me-xMV" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="NnT-tY-7kz"/>
+                            <constraint firstItem="0F0-iQ-HH3" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-502" id="OyF-cP-1h9"/>
+                            <constraint firstItem="0F0-iQ-HH3" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-47" id="Ozp-ie-kHC"/>
+                            <constraint firstItem="H06-EX-vhd" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.641749" id="QSr-dN-eZV"/>
+                            <constraint firstItem="0F0-iQ-HH3" firstAttribute="leading" secondItem="5A3-M9-OI2" secondAttribute="trailing" constant="11" id="Umz-7O-BQ5"/>
+                            <constraint firstItem="zK0-E6-mOA" firstAttribute="top" secondItem="5A3-M9-OI2" secondAttribute="bottom" constant="19" id="YWO-mx-HUq"/>
+                            <constraint firstItem="gvC-Jm-4Ky" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.021" id="ZGP-Hh-KL0"/>
+                            <constraint firstItem="0Dq-Is-4sA" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.58" id="aR4-zm-L4e"/>
+                            <constraint firstItem="66Y-jq-pXb" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.021" id="amz-7N-Gun"/>
+                            <constraint firstItem="gvC-Jm-4Ky" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.071" id="chA-Mg-pSa"/>
+                            <constraint firstItem="zK0-E6-mOA" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="chV-On-HRd"/>
+                            <constraint firstItem="zK0-E6-mOA" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" multiplier="0.9" id="f3d-y3-UGa"/>
+                            <constraint firstItem="0F0-iQ-HH3" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.184" constant="492" id="gHI-22-zZf"/>
+                            <constraint firstItem="P0U-me-xMV" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" multiplier="1.85" id="hOh-Dg-Re3"/>
+                            <constraint firstItem="zK0-E6-mOA" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.943583" id="hv9-jS-60c"/>
+                            <constraint firstItem="0Dq-Is-4sA" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.021" constant="2" id="pdt-z1-6uF"/>
+                            <constraint firstItem="P0U-me-xMV" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.577523" id="qXS-YY-wol"/>
+                            <constraint firstItem="gvC-Jm-4Ky" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" multiplier="1.76" id="wHa-Lu-kpt"/>
+                            <constraint firstItem="0F0-iQ-HH3" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.0464253" constant="-0.1857011999999969" id="wJW-yW-IHq"/>
+                            <constraint firstItem="0Dq-Is-4sA" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" multiplier="1.76" id="wp2-qX-Rvo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backView" destination="m2S-Jp-Qdl" id="FOj-I1-IU1"/>
+                        <outlet property="edfLocationTextField" destination="P0U-me-xMV" id="URV-Pb-vOl"/>
+                        <outlet property="talosExecutableButton" destination="gvC-Jm-4Ky" id="zU5-14-GS0"/>
+                        <outlet property="talosLocationTextField" destination="0Dq-Is-4sA" id="4hW-J8-xH8"/>
+                        <outlet property="webView" destination="zK0-E6-mOA" id="dtx-3d-4iv"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="1148"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LorenzAttractor" width="960" height="540"/>
+    </resources>
 </document>
